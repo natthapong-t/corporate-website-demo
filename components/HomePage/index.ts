@@ -1,0 +1,9 @@
+export { Carousel_Partner } from './Partner/Carousel_Partner';
+export { CarSection } from './CarSection/CarSection';
+export { CTASection } from './CTASection/CTASection';
+export { HouseSection } from './HouseSection/HouseSection';
+export { ManSection } from '@/components/HomePage/ManSection/ManSection';
+export { ShipSection } from '@/components/HomePage/ShipSection/ShipSection';
+export { Carousel_Image } from './Carousel_Image/Carousel_Image';
+export { OurProduct } from '@/components/HomePage/OurProduct/OurProduct';
+export { Hero } from '@/components/HomePage/Hero/Hero';

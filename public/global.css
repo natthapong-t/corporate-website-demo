@@ -1,0 +1,20 @@
+/* * {
+  transition: all 0.1s linear; 
+} */
+
+html {
+  font-size: 20px;
+}
+
+@media (max-width: 1920px) {
+  html {
+    font-size: 18px; /* ลดขนาดฟอนต์สำหรับหน้าจอที่เล็กลง */
+  }
+}
+
+/* สำหรับหน้าจอที่มีความกว้าง 1024px หรือน้อยกว่า */
+@media (max-width: 1024px) {
+  html {
+    font-size: 16px; /* ลดขนาดฟอนต์สำหรับหน้าจอที่เล็กลง */
+  }
+}

@@ -1,0 +1,64 @@
+.header {
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3),rgba(255, 255, 255, 0) 100%);
+  /* filter: blur(5px); */
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  height: 78px;
+  z-index: 1000;
+}
+
+.link {
+  line-height: 250%;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding-left: var(--mantine-spacing-xs);
+  padding-right: var(--mantine-spacing-xs);
+  text-decoration: none;
+  color: light-dark(var(--mantine-color-black), var(--mantine-color-white));
+  font-weight: 400;
+  font-size: 1rem;
+  position: relative; /* ใช้สำหรับทำ border effect */
+  transition: all 0.2s linear; /* เพิ่ม transition */
+}
+
+.link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px; /* ความหนาของเส้น */
+  background-color: #1f9b90;
+  transition: width 0.2s ease; /* เพิ่ม transition ให้ width */
+}
+
+@media screen and (min-width: 1025px) {
+  .link:hover::after {
+    width: 100%; /* ทำให้เส้นขยายจากซ้ายไปขวา */
+  }
+
+  .subLink {
+    @mixin hover {
+      background-color: var(--mantine-color-gray-0);
+    }
+  }
+}
+
+.subLink {
+  width: 100%;
+  padding: var(--mantine-spacing-sm);
+  border-radius: var(--mantine-radius-md);
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 1024px) {
+  .header {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .link {
+    font-size: var(--mantine-font-size-lg);
+  }
+}

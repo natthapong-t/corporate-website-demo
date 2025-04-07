@@ -1,0 +1,7 @@
+.indicator {
+  transition: width 250ms ease;
+  &[data-active] {
+    width: 2rem !important;
+    background: #1f9b90 !important;
+  }
+}
