@@ -43,7 +43,7 @@ export const theme = createTheme({
     myColor,
   },
   primaryColor: 'myColor',
-  fontFamily: ibmPlexSansThai.style.fontFamily,
+  fontFamily: notoSansThai.style.fontFamily,
   breakpoints: {
     xs: '301px',
     sm: '601px',

@@ -51,7 +51,7 @@ function Hero_aboutUs() {
     };
 
     onGetSvg('/AboutUs/Hero_aboutUs.svg', setSvgSize);
-    onGetSvg('/ManSection_MobileBG.svg', setMobileSvgSize);
+    onGetSvg('/AboutUs/Hero_aboutUs_mobile.svg', setMobileSvgSize);
   }, []);
 
   const dynamicHeight = svgSize ? (width * svgSize.height) / svgSize.width : 0;
@@ -59,7 +59,9 @@ function Hero_aboutUs() {
     ? (width * mobileSvgSize.height) / mobileSvgSize.width
     : '100%';
 
-  const backgroundImage = isSmallScreen ? '/ManSection_MobileBG.svg' : '/AboutUs/Hero_aboutUs.svg';
+  const backgroundImage = isSmallScreen
+    ? '/AboutUs/Hero_aboutUs_mobile.svg'
+    : '/AboutUs/Hero_aboutUs.svg';
   const heightValue = isSmallScreen ? mobileDynamicHeight : dynamicHeight;
 
   console.log('bg height = ' + dynamicHeight);
@@ -85,7 +87,7 @@ function Hero_aboutUs() {
         mt={isSmallScreen ? '0' : '0'}
       >
         <Flex
-          //   bg={'red'}
+          // bg={'red'}
           gap={isSmallScreen ? 'sm' : ''}
           px={isMediumScreen || isLargeScreen ? '16px' : '0'}
           pb={isSmallScreen ? '10%' : ''}
@@ -96,23 +98,21 @@ function Hero_aboutUs() {
           justify={isSmallScreen ? 'flex-end' : 'space-around'}
           maw={isSmallScreen ? '100%' : '1280px'}
         >
-          <Image src={'/ManSection_Character.svg'} hiddenFrom="sm" w={'50%'} h={'auto'}></Image>
-          <Flex
-            direction={'column'}
-            h={'100%'}
-            flex={isSmallScreen ? 0 : 1}
-            //   bg={'green'}
-          >
+          <Flex direction={'column'} h={'100%'} flex={isSmallScreen ? 1 : 1} justify={'center'}>
             <Flex
+              // bg={'indigo'}
               flex={isSmallScreen ? 0 : 3}
               align={isSmallScreen ? 'center' : ''}
               justify={'center'}
               direction={'column'}
               h={isSmallScreen ? 'auto' : '100%'}
               px={isSmallScreen ? '16px' : '0'}
+               mt={isSmallScreen ? '-1rem' : 0}
             >
-              <Text fz={'2rem'}>เกี่ยวกับเรา</Text>
-              <Title order={1} fz={isMediumScreen ? '3.75rem' : '3.75rem'}>
+              <Title order={2} fz={isMediumScreen ? '1.2rem' : '2rem'}>
+                เกี่ยวกับเรา
+              </Title>
+              <Title order={1} fz={isMediumScreen ? '1.75rem' : '2.5rem'}>
                 <span style={{ color: '#1F9B90' }}>ไอแคร์</span> ประกันภัย
               </Title>
             </Flex>
@@ -122,7 +122,7 @@ function Hero_aboutUs() {
             h={'100%'}
             visibleFrom="sm"
             flex={1}
-            //   bg={'blue'}
+            // bg={'blue'}
           ></Box>
         </Flex>
       </Flex>

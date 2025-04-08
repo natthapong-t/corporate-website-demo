@@ -10,7 +10,9 @@ export function Carousel_Partner() {
 
   return (
     <Flex gap={'md'} style={{ flexDirection: 'column', alignItems: 'center' }} mt={'4rem'}>
-      <Title order={2} fz={isMediumScreen ? '1.2rem' : '1.65rem'} >พันธมิตรทางธุรกิจของเรา</Title>
+      <Title order={2} fz={isMediumScreen ? '1.2rem' : '1.65rem'}>
+        พันธมิตรทางธุรกิจของเรา
+      </Title>
       <Box
         style={{ overflow: 'hidden', whiteSpace: 'nowrap', width: '100%', flexDirection: 'row' }}
         display={'flex'}

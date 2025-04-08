@@ -31,6 +31,7 @@ import {
   useMantineTheme,
 } from '@mantine/core';
 import { useDisclosure } from '@mantine/hooks';
+import { useResponsive } from '@/hooks/useResponsive';
 import classes from './Header.module.css';
 
 const mockdata = [
@@ -55,6 +56,7 @@ const mockdata = [
 ];
 
 export function Header() {
+  const { isMediumScreen, isSmallScreen } = useResponsive();
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
@@ -76,7 +78,13 @@ export function Header() {
 
   return (
     <Box w="100%">
-      <Flex pos={'fixed'} w={'100%'} className={classes.header} justify={'center'}>
+      <Flex
+        pos={'fixed'}
+        w={'100%'}
+        className={classes.header}
+        justify={'center'}
+        h={isMediumScreen ? '72px' : '78px'}
+      >
         <Group justify="space-between" h="100%" w={'100%'} maw={'1280px'}>
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
           <Anchor href="/" visibleFrom="md">

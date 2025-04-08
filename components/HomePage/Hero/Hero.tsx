@@ -80,7 +80,7 @@ export function Hero() {
 
         <Flex
           // bg={'rgba(255, 0, 0, 0.2)'}
-          h={dynamicHeight} // 78 is the height of the header
+          h={dynamicHeight}
           mih={mih }
           align={'center'}
           justify={'center'}
