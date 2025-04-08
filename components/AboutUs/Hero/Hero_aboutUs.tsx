@@ -1,26 +1,17 @@
 'use client';
 
-import React, { useEffect, useRef, useState } from 'react';
-import Lottie from 'lottie-react';
+import { useResponsive } from '@/hooks/useResponsive';
 import {
   BackgroundImage,
   Box,
-  Button,
-  Card,
-  Center,
   Flex,
-  Grid,
-  Image,
-  rgba,
-  SimpleGrid,
-  Text,
-  Title,
+  Title
 } from '@mantine/core';
 import { useViewportSize } from '@mantine/hooks';
-import { useResponsive } from '@/hooks/useResponsive';
+import React, { useEffect, useState } from 'react';
 import { Header } from '../../Header/Header';
 
-function Hero_aboutUs() {
+export function Hero_aboutUs() {
   const { isMediumScreen, isSmallScreen, isLargeScreen } = useResponsive();
   const [svgSize, setSvgSize] = useState<{ width: number; height: number } | null>(null);
   const [mobileSvgSize, setMobileSvgSize] = useState<{ width: number; height: number } | null>(
@@ -130,4 +121,3 @@ function Hero_aboutUs() {
   );
 }
 
-export default Hero_aboutUs;

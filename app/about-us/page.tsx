@@ -1,26 +1,15 @@
-import React from 'react';
-import { IconMailFilled, IconPhoneFilled } from '@tabler/icons-react';
-import {
-  Anchor,
-  Breadcrumbs,
-  Center,
-  Container,
-  Flex,
-  Group,
-  Image,
-  SimpleGrid,
-  Text,
-  Title,
-} from '@mantine/core';
 import { Footer, MyBreadcrumbs } from '@/components';
 import {
   ContactUs_aboutUs,
   Detail_aboutUs,
+  Hero_aboutUs,
   OurMission_aboutUs,
   OurValues_aboutUs,
   OurVision_aboutUs,
 } from '@/components/AboutUs/';
-import Hero_aboutUs from '../../components/AboutUs/Hero/Hero_aboutUs';
+import {
+  Flex
+} from '@mantine/core';
 
 function aboutUs() {
   const items = [
