@@ -4,6 +4,10 @@
         {
             "path": "icare-insurance\\components\\HomePage\\",
             "badge": "😎"
+        },
+        {
+            "path": "icare-insurance\\components\\AboutUs\\",
+            "badge": "😀"
         }
     ]
 }

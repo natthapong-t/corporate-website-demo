@@ -83,39 +83,39 @@ export function Header() {
         w={'100%'}
         className={classes.header}
         justify={'center'}
-        h={isMediumScreen ? '72px' : '78px'}
+        style={{ height: isMediumScreen ? '72px' : '78px' }}
       >
-        <Group justify="space-between" h="100%" w={'100%'} maw={'1280px'}>
+        <Group justify="space-between" w={'100%'} style={{ maxWidth: '1280px' }}>
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
           <Anchor href="/" visibleFrom="md">
             <img src="logo_ici.png" alt="Logo" height="50" />
           </Anchor>
-          <Group h="100%" gap={0} visibleFrom="md">
+          <Group gap={0} visibleFrom="md" h={'100%'}>
             <Link href="/" className={classes.link}>
               หน้าแรก
             </Link>
-            <a href="#" className={classes.link}>
+            <Link href="#" className={classes.link}>
               ข่าวสาร
-            </a>
-            <a href="#" className={classes.link}>
+            </Link>
+            <Link href="/status" className={classes.link}>
               ฐานะทางการเงิน
-            </a>
+            </Link>
             <Link href="/about-us" className={classes.link}>
               เกี่ยวกับเรา
             </Link>
-            <a href="#" className={classes.link}>
+            <Link href="#" className={classes.link}>
               เคลม
-            </a>
+            </Link>
             <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
               <HoverCard.Target>
-                <a href="#" className={classes.link}>
+                <Link href="#" className={classes.link}>
                   <Center inline>
                     <Box component="span" mr={5}>
                       บริการลูกค้า
                     </Box>
                     <IconChevronDown size={16} />
                   </Center>
-                </a>
+                </Link>
               </HoverCard.Target>
 
               <HoverCard.Dropdown style={{ overflow: 'hidden' }} w={250}>
@@ -148,7 +148,7 @@ export function Header() {
             <Text component="a" href="#" className={classes.link}>
               ข่าวสาร
             </Text>
-            <Text component="a" href="#" className={classes.link}>
+            <Text component="a" href="/status" className={classes.link}>
               ฐานะทางการเงิน
             </Text>
             <Text component="a" href="/about-us" className={classes.link}>

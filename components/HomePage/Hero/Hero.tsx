@@ -64,7 +64,6 @@ export function Hero() {
 
   // console.log('hero height = ' + dynamicHeight);
   return (
-    <Box>
       <BackgroundImage
         // bg={'#dddddd'}
         h={dynamicHeight}
@@ -154,6 +153,5 @@ export function Hero() {
           </Paper>
         </Flex>
       </BackgroundImage>
-    </Box>
   );
 }

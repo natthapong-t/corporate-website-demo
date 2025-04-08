@@ -1,4 +1,3 @@
-import '../public/global.css';
 
 import {
   Carousel_Image,

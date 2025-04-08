@@ -137,6 +137,8 @@ export function ManSection() {
                 radius={999}
                 fw={'normal'}
                 style={isSmallScreen ? {} : { width: 'fit-content' }}
+                component='a'
+                href='/about-us'
               >
                 เกี่ยวกับเรา
               </Button>
