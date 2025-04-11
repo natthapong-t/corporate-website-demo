@@ -22,8 +22,6 @@ function aboutUs() {
           pb={'2rem'}
         >
           <MyBreadcrumbs items={items} />
-          
-          <Flex h={'100vh'}></Flex>
         </Flex>
       </Flex>
       <Footer />
