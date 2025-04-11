@@ -1,5 +1,4 @@
-
-import { Flex } from '@mantine/core';
+import { Box, Center, Flex } from '@mantine/core';
 import { Footer, MyBreadcrumbs } from '@/components';
 import { Hero_status } from '@/components/Status/';
 
@@ -22,6 +21,9 @@ function aboutUs() {
           pb={'2rem'}
         >
           <MyBreadcrumbs items={items} />
+          <Center bg={'red'} w={'100%'} h={'100vh'}>
+            hey
+          </Center>
         </Flex>
       </Flex>
       <Footer />
