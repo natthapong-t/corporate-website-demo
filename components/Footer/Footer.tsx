@@ -70,9 +70,10 @@ export function Footer() {
   const { isMediumScreen, isLargeScreen, isSmallScreen } = useResponsive();
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Text<'a'> key={index} component="a" href={link.link} c="dimmed">
+      <Anchor <'a'> key={index} component="a" href={link.link} c="dimmed">
+
         {link.label}
-      </Text>
+      </Anchor >
     ));
 
     return (
@@ -102,7 +103,9 @@ export function Footer() {
           className="SEO"
         >
           {groups}
-          <Flex
+
+          {/* subscribe  */}
+          {/* <Flex
             my={isMediumScreen ? 'md' : ''}
             direction={'column'}
             p={'lg'}
@@ -118,7 +121,7 @@ export function Footer() {
                 label: { color: '#868E96', marginBottom: '4px' },
               }}
             />
-          </Flex>
+          </Flex> */}
         </Flex>
         <Divider w={'100%'} my="sm" />
         <Flex

@@ -21,7 +21,7 @@ function aboutUs() {
           pb={'2rem'}
         >
           <MyBreadcrumbs items={items} />
-          <Center bg={'red'} w={'100%'} h={'100vh'}>
+          <Center bg={'#f2f2f2'} w={'100%'} h={'100vh'}>
             hey
           </Center>
         </Flex>
