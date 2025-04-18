@@ -35,9 +35,10 @@ export function OurProduct() {
 
       {/* desktop version */}
       <SimpleGrid
+        // bg={'red'}
         cols={4}
         w="100%"
-        maw={'1280px'}
+        style={{ maxWidth: '1280px' }}
         spacing="xs"
         visibleFrom="md"
         px={isMediumScreen || isLargeScreen ? '16px' : '0'}
@@ -134,4 +135,3 @@ export function OurProduct() {
     </Flex>
   );
 }
-

@@ -64,7 +64,7 @@ export function HouseSection() {
           direction={'row'}
           align={'center'}
           justify={'space-around'}
-          maw={'1280px'}
+          style={{ maxWidth: '1280px' }}
           px={isMediumScreen || isLargeScreen ? '16px' : '0'}
         >
           <Flex direction={'column'} gap={'md'} flex={1}>

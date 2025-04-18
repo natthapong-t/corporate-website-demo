@@ -13,7 +13,7 @@ export function ContactUs_aboutUs() {
         direction={isMediumScreen ? 'column-reverse' : 'row'}
         w={'100%'}
         justify={'space-between'}
-        maw={'1280px'}
+        style={{ maxWidth: '1280px' }}
         align={isMediumScreen ? 'center' : ''}
         gap={isMediumScreen ? 'md' : ''}
         //   bg={'red'}
@@ -25,7 +25,7 @@ export function ContactUs_aboutUs() {
           w={isMediumScreen ? '100%' : '50%'}
           justify={isMediumScreen ? 'flex-start' : 'center'}
           align={'left'}
-          maw={'1280px'}
+          style={{ maxWidth: '1280px' }}
           pl={isMediumScreen ? '0' : '0'}
           py={isMediumScreen ? 'md' : '0'}
         >
@@ -57,8 +57,8 @@ export function ContactUs_aboutUs() {
           }}
         ></iframe>
         <Title order={2} fz={'1.65rem'} hiddenFrom="md">
-            ติดต่อเรา
-          </Title>
+          ติดต่อเรา
+        </Title>
       </Flex>
     </Flex>
   );

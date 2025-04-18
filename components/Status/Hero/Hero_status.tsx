@@ -81,7 +81,7 @@ export function Hero_status() {
           direction={isSmallScreen ? 'column' : 'row'}
           align={'center'}
           justify={isSmallScreen ? 'flex-end' : 'space-around'}
-          maw={isSmallScreen ? '100%' : '1280px'}
+          style={isSmallScreen ? { maxWidth: '100%' } : { maxWidth: '1280px' }}
         >
           <Flex direction={'column'} h={'100%'} flex={isSmallScreen ? 1 : 1} justify={'center'}>
             <Flex

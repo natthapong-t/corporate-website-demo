@@ -70,10 +70,9 @@ export function Footer() {
   const { isMediumScreen, isLargeScreen, isSmallScreen } = useResponsive();
   const groups = data.map((group) => {
     const links = group.links.map((link, index) => (
-      <Anchor <'a'> key={index} component="a" href={link.link} c="dimmed">
-
+      <Anchor<'a'> key={index} component="a" href={link.link} c="dimmed">
         {link.label}
-      </Anchor >
+      </Anchor>
     ));
 
     return (
@@ -92,7 +91,7 @@ export function Footer() {
         w={'100%'}
         direction={isMediumScreen ? 'column-reverse' : 'column'}
         gap={isMediumScreen ? 'xs' : 'xl'}
-        maw={'1280px'}
+        style={{ maxWidth: '1280px' }}
         px={isMediumScreen || isLargeScreen ? '16px' : '0'}
       >
         <Divider w={'100%'} my="sm" visibleFrom="md" />

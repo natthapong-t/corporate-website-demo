@@ -1,7 +1,7 @@
 'use client';
 
-import { useResponsive } from '@/hooks/useResponsive';
 import { Flex, Image, SimpleGrid, Text, Title } from '@mantine/core';
+import { useResponsive } from '@/hooks/useResponsive';
 
 export function OurValues_aboutUs() {
   const { isMediumScreen, isSmallScreen, isLargeScreen } = useResponsive();
@@ -15,9 +15,15 @@ export function OurValues_aboutUs() {
   ];
   return (
     <Flex w={'100%'} justify={'center'} px={isMediumScreen || isLargeScreen ? '16px' : '0'}>
-      <Flex w={'100%'} direction={'column'} align={'left'} maw={'1280px'} gap={'2rem'}>
+      <Flex
+        w={'100%'}
+        direction={'column'}
+        align={'left'}
+        style={{ maxWidth: '1280px' }}
+        gap={'2rem'}
+      >
         {/* ค่านิยมของเรา */}
-        <Flex w={'100%'} justify={'center'} maw={'1280px'} gap={'2rem'}>
+        <Flex w={'100%'} justify={'center'} style={{ maxWidth: '1280px' }} gap={'2rem'}>
           <Flex direction={'column'} gap={'md'} justify={'center'} align={'center'} w={'100%'}>
             <Title order={2} fz={'1.65rem'}>
               ค่านิยมของเรา

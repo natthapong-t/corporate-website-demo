@@ -66,10 +66,10 @@ export function ShipSection() {
           direction={'row'}
           align={'center'}
           justify={'space-around'}
-          maw={'1280px'}
+          style={{ maxWidth: '1280px' }}
           px={isMediumScreen || isLargeScreen ? '16px' : '0'}
         >
-          <Box w={'100%'} h={'100%'} flex={1} ></Box>
+          <Box w={'100%'} h={'100%'} flex={1}></Box>
           <Flex direction={'column'} gap={'md'} flex={1}>
             <Title order={2} fz={isMediumScreen ? '1.2rem' : '1.65rem'}>
               "มั่นใจในทุกการขนส่ง"

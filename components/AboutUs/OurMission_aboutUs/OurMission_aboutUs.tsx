@@ -12,7 +12,7 @@ export function OurMission_aboutUs() {
         direction={isMediumScreen ? 'column' : 'row'}
         w={'100%'}
         justify={'space-between'}
-        maw={'1280px'}
+        style={{ maxWidth: '1280px' }}
         align={isMediumScreen ? 'center' : ''}
         gap={isMediumScreen ? 'md' : ''}
         //   bg={'red'}
@@ -33,7 +33,7 @@ export function OurMission_aboutUs() {
           w={isMediumScreen ? '100%' : '50%'}
           justify={isMediumScreen ? 'flex-start' : 'center'}
           align={'left'}
-          maw={'1280px'}
+          style={{ maxWidth: '1280px' }}
           pl={isMediumScreen ? '0' : '0'}
           py={isMediumScreen ? 'md' : '0'}
         >

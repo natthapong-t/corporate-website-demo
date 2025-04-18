@@ -85,7 +85,11 @@ export function Header() {
         justify={'center'}
         style={{ height: isMediumScreen ? '72px' : '78px' }}
       >
-        <Group justify="space-between" w={'100%'} style={{ maxWidth: '1280px' }}>
+        <Group
+          justify="space-between"
+          w={'100%'}
+          style={{ maxWidth: '1280px' }}
+        >
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
           <Anchor href="/" visibleFrom="md">
             <img src="logo_ici.png" alt="Logo" height="50" />

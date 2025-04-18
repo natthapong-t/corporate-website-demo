@@ -61,8 +61,7 @@ export function CarSection() {
           direction={'row'}
           align={'center'}
           justify={'space-around'}
-          maw={'1280px'}
-        >
+          style={{ maxWidth: '1280px' }}        >
           <Flex direction={'column'} gap={'md'} flex={1}>
             <Title order={2} fz={isMediumScreen ? '1.2rem' : '1.65rem'}>
               "อุ่นใจทุกครั้งที่เดินทาง"

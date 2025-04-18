@@ -1,12 +1,7 @@
 'use client';
 
+import { Flex, Image, Text, Title } from '@mantine/core';
 import { useResponsive } from '@/hooks/useResponsive';
-import {
-    Flex,
-    Image,
-    Text,
-    Title
-} from '@mantine/core';
 
 export function Detail_aboutUs() {
   const { isMediumScreen, isSmallScreen, isLargeScreen } = useResponsive();
@@ -20,12 +15,18 @@ export function Detail_aboutUs() {
   ];
   return (
     <Flex w={'100%'} justify={'center'} px={isMediumScreen || isLargeScreen ? '16px' : '0'}>
-      <Flex w={'100%'} direction={'column'} align={'left'} maw={'1280px'} gap={'2rem'}>
+      <Flex
+        w={'100%'}
+        direction={'column'}
+        align={'left'}
+        style={{ maxWidth: '1280px' }}
+        gap={'2rem'}
+      >
         <Flex
           direction={isMediumScreen ? 'column' : 'row'}
           w={'100%'}
           justify={'space-between'}
-          maw={'1280px'}
+          style={{ maxWidth: '1280px' }}
         >
           <Image
             w={isMediumScreen ? '100%' : '50%'}
@@ -39,7 +40,7 @@ export function Detail_aboutUs() {
             w={isMediumScreen ? '100%' : '50%'}
             justify={isMediumScreen ? 'flex-start' : 'center'}
             align={'left'}
-            maw={'1280px'}
+            style={{ maxWidth: '1280px' }}
             pl={isMediumScreen ? '0' : 'xl'}
             py={isMediumScreen ? 'md' : '0'}
           >

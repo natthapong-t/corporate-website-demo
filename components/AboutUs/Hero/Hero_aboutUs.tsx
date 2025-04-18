@@ -1,14 +1,9 @@
 'use client';
 
-import { useResponsive } from '@/hooks/useResponsive';
-import {
-  BackgroundImage,
-  Box,
-  Flex,
-  Title
-} from '@mantine/core';
-import { useViewportSize } from '@mantine/hooks';
 import React, { useEffect, useState } from 'react';
+import { BackgroundImage, Box, Flex, Title } from '@mantine/core';
+import { useViewportSize } from '@mantine/hooks';
+import { useResponsive } from '@/hooks/useResponsive';
 import { Header } from '../../Header/Header';
 
 export function Hero_aboutUs() {
@@ -87,7 +82,7 @@ export function Hero_aboutUs() {
           direction={isSmallScreen ? 'column' : 'row'}
           align={'center'}
           justify={isSmallScreen ? 'flex-end' : 'space-around'}
-          maw={isSmallScreen ? '100%' : '1280px'}
+          style={isSmallScreen ? { maxWidth: '100%' } : { maxWidth: '1280px' }}
         >
           <Flex direction={'column'} h={'100%'} flex={isSmallScreen ? 1 : 1} justify={'center'}>
             <Flex
@@ -98,7 +93,7 @@ export function Hero_aboutUs() {
               direction={'column'}
               h={isSmallScreen ? 'auto' : '100%'}
               px={isSmallScreen ? '16px' : '0'}
-               mt={isSmallScreen ? '-1rem' : 0}
+              mt={isSmallScreen ? '-1rem' : 0}
             >
               <Title order={2} fz={isMediumScreen ? '1.2rem' : '2rem'}>
                 เกี่ยวกับเรา
@@ -120,4 +115,3 @@ export function Hero_aboutUs() {
     </BackgroundImage>
   );
 }
-
