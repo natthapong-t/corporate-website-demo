@@ -1,6 +1,6 @@
 import { Box, Center, Flex } from '@mantine/core';
 import { Footer, MyBreadcrumbs } from '@/components';
-import { Hero_status } from '@/components/Status/';
+import { Accordion_status, Hero_status, Tab_status } from '@/components/Status/';
 
 function aboutUs() {
   const items = [
@@ -16,14 +16,12 @@ function aboutUs() {
           w={'100%'}
           direction={'column'}
           align={'left'}
-          maw={'1280px'}
+          style={{ maxWidth: '1280px' }}
           gap={'2rem'}
           pb={'2rem'}
         >
           <MyBreadcrumbs items={items} />
-          <Center bg={'#f2f2f2'} w={'100%'} h={'100vh'}>
-            hey
-          </Center>
+          <Tab_status />
         </Flex>
       </Flex>
       <Footer />
