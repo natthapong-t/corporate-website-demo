@@ -36,7 +36,7 @@ export function Hero_status() {
       }
     };
 
-    onGetSvg('/Status/Hero_status.svg', setSvgSize);
+    onGetSvg('/Status/Hero_status2.svg', setSvgSize);
     onGetSvg('/Status/Hero_status_mobile.svg', setMobileSvgSize);
   }, []);
 
@@ -47,7 +47,7 @@ export function Hero_status() {
 
   const backgroundImage = isSmallScreen
     ? '/Status/Hero_status_mobile.svg'
-    : '/Status/Hero_status.svg';
+    : '/Status/Hero_status2.svg';
   const heightValue = isSmallScreen ? mobileDynamicHeight : dynamicHeight;
 
   console.log('bg height = ' + dynamicHeight);
