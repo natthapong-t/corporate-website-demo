@@ -56,7 +56,7 @@ const mockdata = [
 ];
 
 export function Header() {
-  const { isMediumScreen, isSmallScreen } = useResponsive();
+  const { isMediumScreen, isSmallScreen, isLargeScreen } = useResponsive();
   const [drawerOpened, { toggle: toggleDrawer, close: closeDrawer }] = useDisclosure(false);
   const [linksOpened, { toggle: toggleLinks }] = useDisclosure(false);
   const theme = useMantineTheme();
@@ -83,12 +83,15 @@ export function Header() {
         w={'100%'}
         className={classes.header}
         justify={'center'}
-        style={{ height: isMediumScreen ? '72px' : '78px' }}
+        // style={{ height: isMediumScreen ? '72px' : '78px' }}
+        // h={isMediumScreen ? '72px' : '78px'}
+        h={isMediumScreen ? '3rem' : '4rem'}
       >
         <Group
           justify="space-between"
           w={'100%'}
           style={{ maxWidth: '1280px' }}
+          px={isMediumScreen ? '0px' : isLargeScreen ? '16px' : '0'}
         >
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
           <Anchor href="/" visibleFrom="md">

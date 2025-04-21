@@ -89,7 +89,7 @@ export function Hero() {
             <Title order={1} fz={isMediumScreen ? '1.75rem' : '2.5rem'}>
               <span style={{ color: '#1F9B90' }}>ไอแคร์</span> ประกันภัย
             </Title>
-            <Title order={2} fz={isMediumScreen ? '1.2rem' : '2rem'}>
+            <Title order={2} fz={isMediumScreen ? '1.2rem' : '2rem'} ta={'center'}>
               ประกันที่ใส่ใจ ใกล้ชิดทุกความต้องการ
             </Title>
             <Stack align="center" gap={0}>
