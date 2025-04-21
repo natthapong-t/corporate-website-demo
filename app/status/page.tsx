@@ -1,6 +1,6 @@
-import { Box, Center, Flex } from '@mantine/core';
 import { Footer, MyBreadcrumbs } from '@/components';
-import { Accordion_status, Hero_status, Tab_status } from '@/components/Status/';
+import { Hero_status, Tab_status } from '@/components/Status/';
+import { Flex } from '@mantine/core';
 
 function aboutUs() {
   const items = [
@@ -19,6 +19,7 @@ function aboutUs() {
           style={{ maxWidth: '1280px' }}
           gap={'2rem'}
           pb={'2rem'}
+          mt={'16px'}
         >
           <MyBreadcrumbs items={items} />
           <Tab_status />

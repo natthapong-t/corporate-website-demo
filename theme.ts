@@ -1,7 +1,7 @@
 'use client';
 
 import { createTheme, MantineColorsTuple } from '@mantine/core';
-import { IBM_Plex_Sans_Thai, Itim, Kanit, Noto_Sans_Thai, Trirong } from 'next/font/google';
+import { IBM_Plex_Sans_Thai, Itim, Kanit, Noto_Sans_Thai } from 'next/font/google';
 
 const myColor: MantineColorsTuple = [
   '#0c3e3a',
@@ -23,17 +23,13 @@ const kanit = Kanit({
 
 const notoSansThai = Noto_Sans_Thai({
   subsets: ['latin'],
-  weight: ['400', '700'],
+  weight: ['100', '200', '300', '400', '500', '600', '700'],
 });
 const ibmPlexSansThai = IBM_Plex_Sans_Thai({
   subsets: ['latin'],
   weight: ['100', '200', '300', '400', '500', '600', '700'],
 });
 const itim = Itim({
-  subsets: ['latin'],
-  weight: ['400'],
-});
-const k2d = Trirong({
   subsets: ['latin'],
   weight: ['400'],
 });
@@ -45,7 +41,7 @@ export const theme = createTheme({
   primaryColor: 'myColor',
   fontFamily: notoSansThai.style.fontFamily,
   breakpoints: {
-    xs: '301px',
+    xs: '401px',
     sm: '601px',
     md: '1025px',
     lg: '1025px',

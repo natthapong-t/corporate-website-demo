@@ -22,10 +22,10 @@ export function Accordion_status({ data }: AccordionStatusProps) {
     <Accordion.Item key={item.year} value={item.year}>
       <Accordion.Control>
         <Stack gap={0}>
-          <Text fw={600} size="md">
+          <Text fw={'bold'} fz={isMediumScreen ? '1rem' : '1.25rem'}>
             {item.year}
           </Text>
-          <Text size="sm" c="dimmed">
+          <Text c="dimmed" fz={isSmallScreen ? '0.8rem' : ''} lineClamp={2}>
             {item.title}
           </Text>
         </Stack>
@@ -37,7 +37,7 @@ export function Accordion_status({ data }: AccordionStatusProps) {
   return (
     <Flex w={'100%'} justify={'center'} px={isMediumScreen || isLargeScreen ? '16px' : '0'}>
       <Accordion
-        variant="separated"
+        variant="filled"
         radius="md"
         w={'100%'}
         classNames={{ chevron: classes.chevron }}

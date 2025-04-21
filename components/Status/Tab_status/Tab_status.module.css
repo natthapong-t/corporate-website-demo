@@ -1,0 +1,8 @@
+.custom-tab {
+    color: rgb(61, 28, 138);
+    transition: color 0.2s ease;
+  }
+  
+  .custom-tab[dataActive] {
+    color: rgb(228, 0, 0);
+  }

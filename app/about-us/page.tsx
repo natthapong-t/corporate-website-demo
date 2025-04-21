@@ -26,6 +26,7 @@ function aboutUs() {
           style={{ maxWidth: '1280px' }}
           gap={'2rem'}
           pb={'2rem'}
+          mt={'-5px'} //21px is the extended height of 'icare-insurance sign' and -5px is -21 + 16px
         >
           <MyBreadcrumbs items={items} />
           <Detail_aboutUs />
