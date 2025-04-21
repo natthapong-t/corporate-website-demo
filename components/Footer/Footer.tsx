@@ -132,7 +132,7 @@ export function Footer() {
         >
           <Flex direction={'column'} align={'start'} gap={'sm'}>
             <Anchor href="/" style={{ display: 'inline-block' }}>
-              <Image src="logo_ici.png" alt="Logo" h={'6rem'} />
+              <Image src="logo_ici.png" alt="Logo" w={'60%'} maw={'500px'}/>
               {/* it used to be <img> with height={'90'} just in case its broken */}
             </Anchor>
 
