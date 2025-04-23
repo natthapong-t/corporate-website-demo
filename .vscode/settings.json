@@ -8,6 +8,10 @@
         {
             "path": "icare-insurance\\components\\AboutUs\\",
             "badge": "😀"
+        },
+        {
+            "path": "icare-insurance\\components\\Status\\",
+            "badge": "🤑"
         }
     ]
 }

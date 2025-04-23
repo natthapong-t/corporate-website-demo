@@ -22,7 +22,7 @@ export function FileCard_status({ fileName, link }: FileCardProps) {
         flexDirection: isMediumScreen ? 'row' : 'column',
         justifyContent: 'space-between',
         alignItems: 'center',
-        gap: isMediumScreen ? '' : '1rem',
+        gap: isMediumScreen ? '8px' : '1rem',
       }}
     >
       <Flex
@@ -34,14 +34,23 @@ export function FileCard_status({ fileName, link }: FileCardProps) {
         <Image
           src="/Status/file_logo.svg"
           alt="File logo"
-          w={isMediumScreen ? '15%' : '75px'}
-          h={isMediumScreen ? 'auto' : '75px'}
+          w={isXSmallScreen ? '24px' : isSmallScreen ? '48px' : isMediumScreen ? '60px' : '75px'}
+          h={isXSmallScreen ? 'auto' : isSmallScreen ? 'auto' : isMediumScreen ? 'auto' : '75px'}
           draggable="false"
         />
         <Text
           ta={isMediumScreen ? 'left' : 'center'}
           fz={isXSmallScreen ? '0.7rem' : isSmallScreen ? '0.8rem' : '1rem'}
           lineClamp={isMediumScreen ? 2 : 3}
+          pb={isMediumScreen ? '' : '1rem'}
+          maw={isSmallScreen ? '200px' :isMediumScreen ? '' : '100%'}
+          w={'100%'}
+          // h={isSmallScreen ? '2rem' : ''}
+          style={{
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+          }}
         >
           {fileName}
         </Text>
@@ -54,7 +63,9 @@ export function FileCard_status({ fileName, link }: FileCardProps) {
         target="_blank"
         color="myColor"
         variant="outline"
-        w={isMediumScreen ? '' : '100%'}
+  
+        // width ของปุ่มไม่เท่ากันเพราะขนาดของ Text เวลาwrapเป็นสองบรรทัด ไม่รู้ทำไม
+        w={isSmallScreen ? '50px' : isMediumScreen ? '120px' : '100%'}
         radius="999"
         leftSection={isMediumScreen ? '' : <IconDownload />}
       >
@@ -65,7 +76,7 @@ export function FileCard_status({ fileName, link }: FileCardProps) {
         >
           ดาวน์โหลด
         </Text>
-        <IconDownload size={'1.5rem'} className="mantine-hidden-from-sm" />
+        <IconDownload className="mantine-hidden-from-sm" width={'12px'} height={'auto'} />
       </Button>
     </Card>
   );
