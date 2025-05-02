@@ -28,24 +28,32 @@ export function Card_claim({ fileName, link, imageSrc, iconSrc }: FileCardProps)
       //   gap: isMediumScreen ? '8px' : '1rem',
       // }}
     >
-      <Flex direction={'row'} justify={'flex-start'} align={'center'} gap={'md'} h={200} pr={'md'}>
+      <Flex
+        direction={'row'}
+        justify={'flex-start'}
+        align={'center'}
+        gap={'md'}
+        h={'auto'}
+        pr={'md'}
+      >
         <Image
           src={imageSrc}
           alt="claim Image"
-          // w={isXSmallScreen ? '24px' : isSmallScreen ? '48px' : isMediumScreen ? '60px' : '75px'}
-          // h={isXSmallScreen ? 'auto' : isSmallScreen ? 'auto' : isMediumScreen ? 'auto' : '75px'}
-          h={'250px'}
+          h={isSmallScreen ? '150px' : isLargeScreen ? '200px' : '250px'}
           w={'auto'}
           draggable="false"
         />
         <Flex direction={'column'} justify={'space-between'} w={'100%'} h={'100%'} py={'md'}>
           <Flex direction={'column'}>
-            <Image src={iconSrc} w={48}></Image>
+            <Image
+              src={iconSrc}
+              w={isSmallScreen ? '24px' : '48px'}
+            ></Image>
             <Text
               fw={'550'}
               ta={'left'}
               fz={isXSmallScreen ? '0.7rem' : isSmallScreen ? '0.8rem' : '1rem'}
-              lineClamp={isMediumScreen ? 2 : 3}
+              lineClamp={3}
               pb={isMediumScreen ? '' : '1rem'}
               maw={isSmallScreen ? '200px' : isMediumScreen ? '' : '100%'}
               w={'100%'}
@@ -60,11 +68,10 @@ export function Card_claim({ fileName, link, imageSrc, iconSrc }: FileCardProps)
               td="underline"
               fz={isXSmallScreen ? '0.7rem' : isSmallScreen ? '0.8rem' : '1rem'}
               fw={'550'}
-              visibleFrom="sm"
             >
               ดูรายละเอียดการเคลม
             </Text>
-            <IconArrowRight height={'auto'} color="#1F9B90" />
+            <IconArrowRight height={isSmallScreen ? '20px' : 'auto'} color="#1F9B90" />
           </Group>
         </Flex>
       </Flex>
