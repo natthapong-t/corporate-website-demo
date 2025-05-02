@@ -110,7 +110,7 @@ export function Header() {
             <Link href="/about-us" className={classes.link}>
               เกี่ยวกับเรา
             </Link>
-            <Link href="#" className={classes.link}>
+            <Link href="/claim" className={classes.link}>
               เคลม
             </Link>
             <HoverCard width={600} position="bottom" radius="md" shadow="md" withinPortal>
@@ -161,7 +161,7 @@ export function Header() {
             <Text component="a" href="/about-us" className={classes.link}>
               เกี่ยวกับเรา
             </Text>
-            <Text component="a" href="#" className={classes.link}>
+            <Text component="a" href="/claim" className={classes.link}>
               เคลม
             </Text>
           </Flex>
