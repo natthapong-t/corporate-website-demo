@@ -32,23 +32,20 @@ export function Card_claim({ fileName, link, imageSrc, iconSrc }: FileCardProps)
         direction={'row'}
         justify={'flex-start'}
         align={'center'}
-        gap={'md'}
+        gap={isXSmallScreen ? 'xs' : 'md'}
         h={'auto'}
-        pr={'md'}
+        pr={isXSmallScreen ? 'xs' : 'md'}
       >
         <Image
           src={imageSrc}
           alt="claim Image"
-          h={isSmallScreen ? '150px' : isLargeScreen ? '200px' : '250px'}
+          h={isXSmallScreen ? '125px' :isSmallScreen ? '150px' : isLargeScreen ? '200px' : '250px'}
           w={'auto'}
           draggable="false"
         />
         <Flex direction={'column'} justify={'space-between'} w={'100%'} h={'100%'} py={'md'}>
           <Flex direction={'column'}>
-            <Image
-              src={iconSrc}
-              w={isSmallScreen ? '24px' : '48px'}
-            ></Image>
+            <Image src={iconSrc} w={isSmallScreen ? '24px' : '48px'}></Image>
             <Text
               fw={'550'}
               ta={'left'}
@@ -62,7 +59,7 @@ export function Card_claim({ fileName, link, imageSrc, iconSrc }: FileCardProps)
             </Text>
           </Flex>
 
-          <Group>
+          <Group bg={''} gap={'xs'}>
             <Text
               c={'#1F9B90'}
               td="underline"
@@ -71,7 +68,7 @@ export function Card_claim({ fileName, link, imageSrc, iconSrc }: FileCardProps)
             >
               ดูรายละเอียดการเคลม
             </Text>
-            <IconArrowRight height={isSmallScreen ? '20px' : 'auto'} color="#1F9B90" />
+            <IconArrowRight height={isXSmallScreen ? '16px' :isSmallScreen ? '20px' : 'auto'} color="#1F9B90" />
           </Group>
         </Flex>
       </Flex>
