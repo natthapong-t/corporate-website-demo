@@ -6,7 +6,7 @@ import { useViewportSize } from '@mantine/hooks';
 import { Header } from '@/components/Header/Header';
 import { useResponsive } from '@/hooks/useResponsive';
 
-export function Hero_claim() {
+export function Hero_claim_property() {
   const { isMediumScreen, isSmallScreen, isLargeScreen } = useResponsive();
   const [svgSize, setSvgSize] = useState<{ width: number; height: number } | null>(null);
   const [mobileSvgSize, setMobileSvgSize] = useState<{ width: number; height: number } | null>(
@@ -36,7 +36,7 @@ export function Hero_claim() {
       }
     };
 
-    onGetSvg('/Claim/Hero_claim.svg', setSvgSize);
+    onGetSvg('/Claim/Property/Hero_claim_property.svg', setSvgSize);
     onGetSvg('/Claim/Hero_claim_mobile.svg', setMobileSvgSize);
   }, []);
 
@@ -47,7 +47,7 @@ export function Hero_claim() {
 
   const backgroundImage = isSmallScreen
     ? '/Claim/Hero_claim_mobile.svg'
-    : '/Claim/Hero_claim.svg';
+    : '/Claim/Property/Hero_claim_property.svg';
   const heightValue = isSmallScreen ? mobileDynamicHeight : dynamicHeight;
 
   console.log('bg height = ' + dynamicHeight);
@@ -91,8 +91,11 @@ export function Hero_claim() {
               px={isSmallScreen ? '16px' : '0'}
               mt={isSmallScreen ? '-2.53333rem' : 0}
             >
+              <Title order={2} fz={isMediumScreen ? '1.2rem' : '2rem'}>
+                การเคลม
+              </Title>
               <Title order={1} fz={isMediumScreen ? '1.75rem' : '2.5rem'}>
-                <span style={{ color: '#1F9B90' }}>การ</span>เคลม
+                <span style={{ color: '#1F9B90' }}>ประกัน</span>เกี่ยวกับทรัพย์สิน
               </Title>
             </Flex>
           </Flex>
