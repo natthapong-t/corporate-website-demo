@@ -4,7 +4,7 @@ import { IconDownload } from '@tabler/icons-react';
 import { Anchor, Button, Card, Flex, Image, List, Text, Title } from '@mantine/core';
 import { useResponsive } from '@/hooks/useResponsive';
 
-export function Content_claim_property() {
+export function Content_claim_travel() {
   const { isMediumScreen, isSmallScreen, isLargeScreen, isXSmallScreen } = useResponsive();
 
   return (
@@ -47,15 +47,14 @@ export function Content_claim_property() {
               เอกสารที่ต้องใช้
             </Title>
             <List withPadding w={'95%'}>
-              <List.Item>แบบฟอร์มการเรียกร้องค่าสินไหมทดแทน</List.Item>
-              <List.Item>ภาพถ่ายทรัพย์สินที่เสียหาย</List.Item>
-              <List.Item>สำเนารายการทรัพย์สินที่ได้รับความเสียหาย</List.Item>
-              <List.Item>สำเนาใบเสร็จรับเงิน หรือใบเสนอราคาค่าซ่อม</List.Item>
-              <List.Item>สำเนาเอกสารหลักฐานของผู้เอาประกันภัย</List.Item>
-              <List.Item>สำเนาบันทึกประจำวันเกี่ยวกับคดี (ถ้ามี)</List.Item>
-              <List.Item>สำเนาเอกสารหลักฐานของคู่กรณี (ถ้ามี)</List.Item>
-              <List.Item>สำเนาสมุดบัญชีธนาคารหน้าแรก (สำหรับโอนค่าสินไหมทดแทน)</List.Item>
-              <List.Item>เอกสารอื่น ๆ เพิ่มเติมตามที่บริษัทร้องขอ</List.Item>
+              <List.Item>ตั๋วเครื่องบิน/เอกสารการเดินทาง</List.Item>
+              <List.Item>ใบเสร็จรับเงินต้นฉบับ</List.Item>
+              <List.Item>ใบรับรองแพทย์ / รายงานแพทย์</List.Item>
+              <List.Item>สำเนาบัตรประกันภัย</List.Item>
+              <List.Item>สำเนาบัตรประชาชนของผู้เอาประกันภัย พร้อมรับรองสำเนาถูกต้อง</List.Item>
+              <List.Item>
+                สำเนาหน้าแรกสมุดบัญชีของผู้เอาประกันภัย (บัญชีออมทรัพย์ / กระแสรายวัน)
+              </List.Item>
             </List>
           </Flex>
 
@@ -113,10 +112,9 @@ export function Content_claim_property() {
             </Title>
             <List withPadding w={'95%'}>
               <List.Item>
-                เมื่อบริษัทฯ ได้รับหนังสือตกลงพร้อมหลักฐานของผู้ลงนาม ถูกต้องครบถ้วน
-                ระยะเวลาการทำจ่ายค่าสินไหมทดแทนให้แก่ผู้เอาประกันภัย ภายใน 15 วันนับแต่วันที่บริษัทฯ
-                ได้ตกลงค่าสินไหมเป็นที่ยุติแล้ว และบริษัทฯ
-                ได้รับหลักฐานแสดงความเสียหายที่ครบถ้วนถูกต้องแล้ว
+                ระยะเวลาการอนุมัติจ่ายค่าสินไหมทดแทนให้แก่ผู้เอาประกันภัยภายใน 15
+                วันนับแต่วันที่บริษัท ได้ตกลงค่าสินไหมทดแทนเป็นที่ยุติแล้ว
+                และบริษัทได้รับเอกสารแสดงความเสียหายที่ครบถ้วน
               </List.Item>
             </List>
           </Flex>
@@ -188,7 +186,7 @@ export function Content_claim_property() {
                     alignItems: 'center',
                   }}
                 >
-                  แบบเรียกร้องค่าสินไหมทดแทน
+                  แบบฟอร์มเรียกร้องค่าสินไหมทดแทนประกันภัยการเดินทางต่างประเทศ
                 </Text>
               </Flex>
 
