@@ -7,7 +7,7 @@ import { Header } from '@/components/Header/Header';
 import { useResponsive } from '@/hooks/useResponsive';
 
 export function Hero_claim_property() {
-  const { isMediumScreen, isSmallScreen, isLargeScreen } = useResponsive();
+  const { isMediumScreen, isSmallScreen, isXSmallScreen, isLargeScreen } = useResponsive();
   const [svgSize, setSvgSize] = useState<{ width: number; height: number } | null>(null);
   const [mobileSvgSize, setMobileSvgSize] = useState<{ width: number; height: number } | null>(
     null
@@ -37,7 +37,7 @@ export function Hero_claim_property() {
     };
 
     onGetSvg('/Claim/Property/Hero_claim_property.svg', setSvgSize);
-    onGetSvg('/Claim/Hero_claim_mobile.svg', setMobileSvgSize);
+    onGetSvg('/Claim/Property/Hero_claim_property_mobile.svg', setMobileSvgSize);
   }, []);
 
   const dynamicHeight = svgSize ? (width * svgSize.height) / svgSize.width : 0;
@@ -46,7 +46,7 @@ export function Hero_claim_property() {
     : '100%';
 
   const backgroundImage = isSmallScreen
-    ? '/Claim/Hero_claim_mobile.svg'
+    ? '/Claim/Property/Hero_claim_property_mobile.svg'
     : '/Claim/Property/Hero_claim_property.svg';
   const heightValue = isSmallScreen ? mobileDynamicHeight : dynamicHeight;
 
@@ -94,7 +94,10 @@ export function Hero_claim_property() {
               <Title order={2} fz={isMediumScreen ? '1.2rem' : '2rem'}>
                 การเคลม
               </Title>
-              <Title order={1} fz={isMediumScreen ? '1.75rem' : '2.5rem'}>
+              <Title
+                order={1}
+                fz={isXSmallScreen ? '1.6rem' : isMediumScreen ? '1.75rem' : '2.5rem'}
+              >
                 <span style={{ color: '#1F9B90' }}>ประกัน</span>เกี่ยวกับทรัพย์สิน
               </Title>
             </Flex>

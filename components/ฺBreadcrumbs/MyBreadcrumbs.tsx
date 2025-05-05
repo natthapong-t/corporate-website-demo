@@ -1,6 +1,7 @@
 'use client';
-import { useResponsive } from '@/hooks/useResponsive';
+
 import { Anchor, Breadcrumbs } from '@mantine/core';
+import { useResponsive } from '@/hooks/useResponsive';
 
 type BreadcrumbItem = {
   title: string;
@@ -18,7 +19,12 @@ export const MyBreadcrumbs = ({ items }: MyBreadcrumbsProps) => {
       {items.map((item, index) => {
         const isLast = index === items.length - 1;
         return (
-          <Anchor key={index} href={isLast ? undefined : item.href} c={isLast ? '' : '#A7A9AC'}>
+          <Anchor
+            key={index}
+            href={isLast ? undefined : item.href}
+            c={isLast ? '' : '#A7A9AC'}
+            lh={isSmallScreen ? '1.5rem' : '1rem'}
+          >
             {item.title}
           </Anchor>
         );

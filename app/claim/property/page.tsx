@@ -2,6 +2,7 @@ import { Flex } from '@mantine/core';
 import { Footer, MyBreadcrumbs } from '@/components';
 import { Hero_aboutUs } from '@/components/AboutUs/';
 import { Hero_claim, List_claim } from '@/components/Claim/';
+import { Content_claim_property } from '@/components/Claim/Property/Content_claim_property';
 import { Hero_claim_property } from '@/components/Claim/Property/Hero_claim_property';
 
 function claim() {
@@ -13,7 +14,7 @@ function claim() {
 
   return (
     <>
-      <Hero_claim_property  />
+      <Hero_claim_property />
       <Flex w={'100%'} justify={'center'}>
         <Flex
           w={'100%'}
@@ -25,7 +26,7 @@ function claim() {
           mt={'16px'}
         >
           <MyBreadcrumbs items={items} />
-          
+          <Content_claim_property />
         </Flex>
       </Flex>
       <Footer />
