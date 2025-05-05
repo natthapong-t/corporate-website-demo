@@ -3,7 +3,7 @@
     "folder-customization.folders": [
         {
             "path": "icare-insurance\\components\\HomePage\\",
-            "badge": "😎"
+            "badge": "😀"
         },
         {
             "path": "icare-insurance\\components\\AboutUs\\",
@@ -11,7 +11,23 @@
         },
         {
             "path": "icare-insurance\\components\\Status\\",
-            "badge": "🤑"
+            "badge": "😀"
+        },
+        {
+            "path": "icare-insurance\\components\\Claim\\",
+            "badge": "😀"
+        },
+        {
+            "path": "icare-insurance\\components\\ฺBreadcrumbs\\",
+            "badge": "🥶"
+        },
+        {
+            "path": "icare-insurance\\components\\Header\\",
+            "badge": "🥶"
+        },
+        {
+            "path": "icare-insurance\\components\\Footer\\",
+            "badge": "🥶"
         }
     ]
 }

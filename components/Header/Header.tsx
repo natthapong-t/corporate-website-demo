@@ -101,7 +101,7 @@ export function Header() {
             <Link href="/" className={classes.link}>
               หน้าแรก
             </Link>
-            <Link href="#" className={classes.link}>
+            <Link href="/articles" className={classes.link}>
               ข่าวสาร
             </Link>
             <Link href="/status" className={classes.link}>
