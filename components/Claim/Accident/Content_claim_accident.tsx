@@ -49,7 +49,7 @@ export function Content_claim_accident() {
             <List withPadding w={'95%'}>
               <List.Item>
                 กรณีเรียกร้องค่ารักษาพยาบาล
-                <List w={'95%'}>
+                <List w={'90%'}>
                   <List.Item>แบบฟอร์มการเรียกร้องค่าสินไหมทดแทน</List.Item>
                   <List.Item>ต้นฉบับใบเสร็จรับเงิน และใบสรุปรายการค่ารักษาพยาบาล</List.Item>
                   <List.Item>ต้นฉบับใบรับรองแพทย์/ รายงานแพทย์</List.Item>
@@ -65,7 +65,7 @@ export function Content_claim_accident() {
               </List.Item>
               <List.Item>
                 กรณีทุพลภาพถาวรสิ้นเชิง การสูญเสียอวัยวะ สายตาหรือป่วยด้วยโรคร้ายแรง
-                <List w={'95%'}>
+                <List w={'90%'}>
                   <List.Item>แบบฟอร์มการเรียกร้องค่าสินไหมทดแทน</List.Item>
                   <List.Item>ต้นฉบับใบรับรองแพทย์/ รายงานแพทย์</List.Item>
                   <List.Item>บันทึกประจำวันของตำรวจเกี่ยวกับคดี พร้อมรับรองสำเนาถูกต้อง</List.Item>
@@ -84,7 +84,7 @@ export function Content_claim_accident() {
               </List.Item>
               <List.Item>
                 กรณีเสียชีวิต
-                <List w={'95%'}>
+                <List w={'90%'}>
                   <List.Item>แบบฟอร์มการเรียกร้องค่าสินไหมทดแทน</List.Item>
                   <List.Item>สำเนาใบมรณบัตร และหนังสือรับรองการตาย</List.Item>
                   <List.Item>สำเนาใบชันสูตรพลิกศพ</List.Item>
