@@ -95,7 +95,7 @@ export function Header() {
         >
           <Burger opened={drawerOpened} onClick={toggleDrawer} hiddenFrom="md" />
           <Anchor href="/" visibleFrom="md">
-            <img src="logo_ici.png" alt="Logo" height="50" />
+            <img src="/logo_ici.png" alt="Logo" height="50" />
           </Anchor>
           <Group gap={0} visibleFrom="md" h={'100%'}>
             <Link href="/" className={classes.link}>
