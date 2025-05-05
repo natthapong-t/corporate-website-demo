@@ -24,6 +24,7 @@ export const MyBreadcrumbs = ({ items }: MyBreadcrumbsProps) => {
             href={isLast ? undefined : item.href}
             c={isLast ? '' : '#A7A9AC'}
             lh={isSmallScreen ? '1.5rem' : '1rem'}
+            truncate={isLast ? 'end' : 'end'}
           >
             {item.title}
           </Anchor>
