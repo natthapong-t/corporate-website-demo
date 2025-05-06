@@ -37,21 +37,27 @@ import classes from './Header.module.css';
 const mockdata = [
   {
     title: 'ร้องเรียน',
+    link: '#',
   },
   {
     title: 'ตรวจสอบ พ.ร.บ.',
+    link: '#',
   },
   {
     title: 'แก้ไข IMEI',
+    link: '#',
   },
   {
     title: 'รายชื่อโรงพยาบาล',
+    link: '#',
   },
   {
     title: 'ค้นหาอู่',
+    link: '#',
   },
   {
     title: 'Service Level Agreement (SLA)',
+    link: '/SLA.pdf',
   },
 ];
 
@@ -65,10 +71,24 @@ export function Header() {
     <UnstyledButton className={classes.subLink} key={item.title}>
       <Group wrap="nowrap" align="flex-start">
         <Flex>
-          <Text size="sm" visibleFrom="md">
+          <Text
+            size="sm"
+            visibleFrom="md"
+            style={{ textDecoration: 'none' }}
+            component="a"
+            href={item.link}
+            target="_blank"
+          >
             {item.title}
           </Text>
-          <Text size="lg" hiddenFrom="md">
+          <Text
+            size="lg"
+            hiddenFrom="md"
+            style={{ textDecoration: 'none' }}
+            component="a"
+            href={item.link}
+            target="_blank"
+          >
             {item.title}
           </Text>
         </Flex>
@@ -137,13 +157,14 @@ export function Header() {
         </Group>
       </Flex>
 
+      {/* side bar */}
       <Drawer
         opened={drawerOpened}
         onClose={closeDrawer}
         withCloseButton={false}
         size="75%"
         padding="xl"
-        title={<img src="logo_ici.png" alt="Logo" height="50" />}
+        title={<img src="/logo_ici.png" alt="Logo" height="50" />}
         hiddenFrom="md"
         zIndex={1000000}
       >
@@ -152,7 +173,7 @@ export function Header() {
             <Text component="a" href="/" className={classes.link}>
               หน้าแรก
             </Text>
-            <Text component="a" href="#" className={classes.link}>
+            <Text component="a" href="/articles" className={classes.link}>
               ข่าวสาร
             </Text>
             <Text component="a" href="/status" className={classes.link}>

@@ -2,7 +2,7 @@ import { Footer, MyBreadcrumbs } from '@/components';
 import { Hero_status, Tab_status } from '@/components/Status/';
 import { Flex } from '@mantine/core';
 
-function aboutUs() {
+function status() {
   const items = [
     { title: 'หน้าแรก', href: '/' },
     { title: 'ฐานะทางการเงิน', href: '/status' },
@@ -30,4 +30,4 @@ function aboutUs() {
   );
 }
 
-export default aboutUs;
+export default status;
